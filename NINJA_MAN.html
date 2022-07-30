@@ -159,12 +159,12 @@
         
     var score = 0;
     console.log("Score: " + score);
-    function Score(){
-    	if(world[ninjaman.y][ninjaman.x] === 2){
+    function Score(){ //SE AGREGA FUNCION QUE PODRÍA LLEVAR EL PUNTAJE DE CUANTAS PIEZAS DE SUSHI Y ONIGIRI COME NINJAMAN
+    	if(world[ninjaman.y][ninjaman.x] === 2){ //SUSHI
                 world[ninjaman.y][ninjaman.x] = 0;
                 score += 10;
                 console.log("score: " + score);}
-                else if(world[ninjaman.y][ninjaman.x] === 3){
+                else if(world[ninjaman.y][ninjaman.x] === 3){//ONIGIRI
                 world[ninjaman.y][ninjaman.x] = 0;
                 score += 5;
                 console.log("score: " + score);
